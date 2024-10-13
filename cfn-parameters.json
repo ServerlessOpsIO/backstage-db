@@ -1,0 +1,18 @@
+{
+    "Domain": "infra",
+    "System": "backstage",
+    "Component": $env.GITHUB_REPOSITORY_NAME_PART_SLUG_CS,
+    "CodeBranch": $env.GITHUB_REF_SLUG_CS,
+    "VpcId": "/org/networking/VpcId",
+    "VpcSubnets": "/org/networking/VpcPublicSubnets",
+    "ClusterSecurityGroupId": "/infra/backstage/backstage-cluster/main/ContainerSecurityGroupId",
+    "DbFamily": "aurora-postgresql16",
+    "DbEngine": "aurora-postgresql",
+    "DbEngineVersion": "16",
+    "DbPort": "5432",
+    "DbUsername": "postgres",
+    "RdsScalingMinCapacity": "0.5",
+    "RdsScalingMaxCapacity": "8",
+    "RdsScalingMinInstances": "1",
+    "RdsScalingMaxInstances": "3"
+}
