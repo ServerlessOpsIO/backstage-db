@@ -85,8 +85,8 @@ Resources:
       GenerateSecretString:
         SecretStringTemplate: !Sub '{"username": "${DbUsername}"}'
         GenerateStringKey: 'password'
-        PasswordLength: 32
-        ExcludeCharacters: '"@/\'
+        PasswordLength: 64
+        ExcludePunctuation: true
 
   ## DB Cluster
   RdsDbClusterParameterGroup:
