@@ -1,0 +1,15 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: backstage-db
+  description: Backstage Database
+  annotations:
+    github.com/project-slug: ServerlessOpsIO/backstage-app
+    io.serverlessops/rds-engine: aurora-postgresql
+spec:
+  type: database
+  lifecycle: production
+  owner: group:admins
+  system: backstage
+  domain: infrastructure
