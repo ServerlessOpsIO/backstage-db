@@ -11,7 +11,7 @@
     "DbEngineVersion": "16",
     "DbPort": "5432",
     "DbUsername": "postgres",
-    "RdsScalingMinCapacity": "0.5",
+    "RdsScalingMinCapacity": "0",
     "RdsScalingMaxCapacity": "8",
     "RdsScalingMinInstances": "1",
     "RdsScalingMaxInstances": "3"
