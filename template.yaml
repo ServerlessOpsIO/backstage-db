@@ -143,7 +143,7 @@ Resources:
     Properties:
       DBInstanceClass: db.serverless
       DBClusterIdentifier: !Ref RdsDbCluster
-      Engine: aurora-postgresql
+      Engine: !Ref DbEngine
 
   RdsDbClusterScalableTarget:
     Type: AWS::ApplicationAutoScaling::ScalableTarget
