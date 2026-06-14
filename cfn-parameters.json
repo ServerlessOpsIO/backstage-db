@@ -5,7 +5,7 @@
     "CodeBranch": $env.GITHUB_REF_SLUG_CS,
     "VpcId": "/org/networking/VpcId",
     "VpcSubnets": "/org/networking/VpcPublicSubnets",
-    "ClusterSecurityGroupId": "/infra/backstage/backstage-cluster/main/ContainerSecurityGroupId",
+    "ClusterSecurityGroupId": "/platform/backstage/backstage-cluster/main/ContainerSecurityGroupId",
     "DbFamily": "aurora-postgresql16",
     "DbEngine": "aurora-postgresql",
     "DbEngineVersion": "16",
