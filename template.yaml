@@ -71,6 +71,11 @@ Parameters:
     Description: ID of cluster security group
 
 
+Mappings:
+  DbEngineCloudwatchLogsExports:
+    aurora-postgresql:
+      Values: ["postgresql"]
+
 
 Resources:
   ########
@@ -134,8 +139,7 @@ Resources:
         SecondsUntilAutoPause: 3600   # 1 hour
       KmsKeyId: alias/aws/rds
       StorageEncrypted: true
-      EnableCloudwatchLogsExports:
-        - postgresql
+      EnableCloudwatchLogsExports: !FindInMap [DbEngineCloudwatchLogsExports, !Ref DbEngine, Values]
       PreferredBackupWindow: 03:00-04:00
 
   RdsDbInstance:
